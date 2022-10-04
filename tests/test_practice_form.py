@@ -4,13 +4,13 @@ from selene import have
 import allure
 from allure_commons.types import Severity
 
+
 @allure.tag('web')
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'matyukha')
 @allure.feature('Student Registration Form')
 @allure.story('Filling form of registration')
 @allure.link('demoqa.com')
-
 def test_student_registration_form():
     with allure.step("Open registrations form"):
         browser.open('https://demoqa.com/automation-practice-form')
